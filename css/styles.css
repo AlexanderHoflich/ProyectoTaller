@@ -1,0 +1,193 @@
+body {
+    background-color: #e5e7eb;
+}
+
+.modal-content {
+    background-image: url('../image/img6.jpg');
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen */
+}
+
+.custom-nav {
+    height: 7vh;
+    z-index: 1030;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu {
+    background-color: gray;
+    box-shadow: 0 0 10px #b30009;
+}
+
+.dropdown-menu:hover {
+    background-color: black;
+    color: #b30009;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+.enlaces {    
+    color: black;
+}
+
+.enlaces:hover {
+    cursor: pointer;
+}
+
+.transparent-input {
+    background-color: transparent;
+    border: solid 1px #dc3545;
+}
+
+.transparent-input::placeholder {
+    color: white;
+}
+
+li {
+    color: red;
+    margin: 1rem;
+
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+li a:hover {
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.nav-link {
+    color: grey
+}
+
+p {
+    color: grey;
+}
+
+.btn-dark {
+    background-color: #b30009;
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: black;
+    box-shadow: 0 0 10px #b30009;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+.card:hover {
+    transform: scale(1.2);
+}
+
+.cart {
+    background-color: #374151;
+    border: solid 1px black;
+    padding: 5px;
+    margin: 20px;
+    box-shadow: 0 0 20px black
+}
+
+.img3 {
+    border-radius: 20px;
+    box-shadow: 0 0 20px black
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+}
+
+.active {
+    background-color: grey;
+    border-radius: 10px;
+}
+
+/* -------------------------------------------------------------- */
+
+.custom-carousel {
+    height: 750px;
+    background-color: black;
+    z-index: 1000;
+    margin-top: 7vh;
+}
+
+.custom-carousel .carousel-item {
+    height: 100%;
+}
+
+.custom-carousel .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-color: black;
+}
+
+@media (width < 800px) {
+
+    .custom-nav {
+        height: 10vh;
+    }
+
+    .custom-carousel {
+        margin-top: 11vh;
+        height: 200px;
+        background-color: black;
+        z-index: 1000;
+    }
+}
+
+
+/* PIE DE PAGINA------------------------------ */
+
+footer {
+    background-color: black;
+    color: grey;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-links a {
+    color: grey;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background-color: grey;
+    border-radius: 10px;
+    padding: 2px;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}

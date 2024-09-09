@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Taller CHIMPAS PRODUCTOS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles1.css">
+
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="d-flex">
+
+        <div class="sidebar p-3 vh-100">
+
+            <div class="d-flex align-items-center mb-4">
+
+                <img src="image/logo.png" class="img-fluid" alt="Logo">
+
+                <span class="ms-2 title">
+                    Chimpas Bikers
+                </span>
+
+            </div>
+
+            <ul class="nav flex-column">
+
+                <li class="nav-item">
+                    <a href="index3.html" class="nav-link text-light"><i class="fa fa-home"></i> Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index31.html" class="nav-link text-light"><i class="fa fa-receipt"></i> Ventas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index32.html" class="nav-link text-light"><i class="fa fa-list-alt"></i> Compras</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a href="index33.html" class="nav-link text-light"><i class="fa fa-tag"></i> Productos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index34.html" class="nav-link text-light"><i class="fa fa-users"></i> Clientes</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index35.html" class="nav-link text-light"><i class="fa fa-truck"></i> Proveedores</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow-1 p-1">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg mb-4">
+
+                <div class="container-fluid">
+
+                    <div class="collapse navbar-collapse">
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#"><i class="fa fa-list-alt"></i> Comprar</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#"><i class="fa fa-receipt"></i> Vender</a>
+                            </li>
+
+                        </ul>
+
+                        <div class="d-flex">
+
+                            <div class="me-3">
+                                <i class="fa fa-user"></i> Alexander
+                            </div>
+
+                            <a href="index2.html" class="btn btn-danger"><i class="fa fa-sign-out-alt"></i>
+                                Cerrar sesión
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <div class="container">
+
+                <h2 class="text-center">Inventario</h2>
+                <!-- Formulario -->
+                <div class="row">
+
+                    <div class=" col-5 mb-3">
+
+                        <input type="text" id="buscar" class="form-control" placeholder="Buscar..."
+                            onkeyup="filtrarTabla()">
+
+                    </div>
+
+                    <div class=" col-5 mb-3">
+
+                        <button class="btn btn-info" onclick="imprimir()">
+                            <i class="fa fa-print"></i> Imprimir
+                        </button>
+
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#modalProd">
+                            <i class="fa fa-plus"></i>
+                            Nuevo
+                        </button>
+
+                    </div>
+
+                </div>
+                <!-- Tabla -->
+                <div class="table-responsive scrollable-table">
+
+                    <table class="table table-bordered">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Ítem</th>
+                                <th>Producto o Servicio</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                                <th>Categoría</th>
+                                <th>Descripción</th>
+                                <th>Stock</th>
+                                <th>Notas</th>
+                                <th>Acciones</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="listaProductos"></tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MODAL DEL FORMULARIO--------------------------------------------------------------------------------------------- -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalProd" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="text-center mt-3">
+
+                    <h1 class="fs-4 fw-bolder text-danger" id="staticBackdropLabel">Registro de Productos</h1>
+
+                </div>
+
+                <div class="modal-body  text-danger fw-bolder fs-5">
+
+                    <div class="row mb-3">
+
+                        <div class="col">
+
+                            <div class="mb-3">
+
+                                <label for="prodServ" class="form-label">Producto o Servicio</label>
+
+                                <input type="text" id="prodServ" class="form-control">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row mb-3">
+
+                        <div class="col">
+
+                            <div class="mb-3">
+
+                                <label for="cantidad" class="form-label">Cantidad</label>
+
+                                <input type="text" id="cantidad" class="form-control">
+
+                            </div>
+
+                        </div>
+
+                        <div class="col">
+
+                            <div class="mb-3">
+
+                                <label for="precio" class="form-label">Precio</label>
+
+                                <input type="text" id="precio" class="form-control">
+
+                            </div>
+
+                        </div>
+
+                        <div class="col">
+
+                            <div class="mb-3">
+
+                                <label for="categoria" class="form-label">Categoria</label>
+
+                                <select class="form-select" id="categoria" required>
+
+                                    <option value="" disabled selected>Opciones</option>
+
+                                    <option value="producto">Producto</option>
+
+                                    <option value="servicio">Servicio</option>   
+                                    
+                                </select>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row mb-3">                        
+
+                        <div class="col-8">
+
+                            <div class="mb-3">
+
+                                <label for="descripcion" class="form-label">Descripcion</label>
+
+                                <input type="text" id="descripcion" class="form-control">
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-4">
+
+                            <div class="mb-3">
+
+                                <label for="stock" class="form-label">Stock</label>
+
+                                <input type="text" id="stock" class="form-control">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row mb-3">
+
+                        <div class="col">
+
+                            <div class="mb-3">
+
+                                <label for="notas" class="form-label">Nota</label>
+
+                                <input type="text" id="notas" class="form-control">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button onclick="cancelar()" type="button" class="btn btn-danger">Cancelar</button>
+
+                    <button onclick="registrarProducto()" class="btn btn-success">Registrar</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MODAL DEL FORMULARIO--------------------------------------------------------------------------------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <script src="js/productos.js"></script>
+
+    <script>
+
+        function cancelar() {
+            localStorage.removeItem('proveedor_seleccionado');
+            window.location.href = 'index33.html';
+        }
+        cargarDatos();
+
+    </script>
+</body>
+
+</html>

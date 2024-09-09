@@ -1,0 +1,1127 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Chimpas Bikers Taller</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACION------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <nav class="navbar navbar-expand-lg custom-nav">
+        <div class="container">
+
+            <!-- Botón de hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.png" class="logo" alt="Logo">
+            </a>
+
+            <!-- Enlaces de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index1.html">CLUB</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index2.html">TALLER</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">SERVICIOS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#piezas">PIEZAS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rse">RSE</a>
+                    </li>
+
+                </ul>
+
+                <!-- Botones de Iniciar sesión y Registrarse -->
+                <div class="d-flex">
+
+                    <a href="#" class="btn btn-dark btn-md me-2" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Iniciar sesión
+                    </a>
+
+                    <a href="registro.html" class="btn btn-dark btn-md">
+                        Registrarse
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- BARRA DE NAVEGACION------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- CARRUSEL DE IMAGENES-------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div id="carouselExample" class="carousel slide custom-carousel">
+
+        <div class="carousel-inner h-100">
+
+            <div class="carousel-item active">
+                <img src="image/img9.jpg" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
+                <img src="image/imgt1.jpg" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item" id="targ">
+                <img src="image/imgt2.jpg" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item" id="targ">
+                <img src="image/imgt3.jpg" class="d-block w-100" alt="...">
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+    <!-- CARRUSEL DE IMAGENES-------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <hr>
+
+    <!--TARGETA DE PRESENTACION----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <h1 class="display-5 fw-bold text-center my-5">TU MOTO EN LAS MEJORES MANOS</h1>
+
+    <div class="container my-5">
+
+        <div class="col-md-12">
+
+            <p class="fs-4">
+                En Chimpas Bikers, combinamos nuestra pasión por las motos con una dedicación absoluta a la calidad y la
+                seguridad. Ofrecemos una amplia gama de servicios, que van desde el mantenimiento preventivo y
+                reparaciones especializadas hasta la personalización a medida de tu moto. Nuestro equipo de técnicos
+                altamente capacitados está aquí para asegurarte que tu moto esté en óptimas condiciones, permitiéndote
+                disfrutar de cada viaje con total confianza.
+            </p>
+
+            <p class="fs-4">
+                Además, contamos con una tienda donde encontrarás todo lo que necesitas para tu moto: accesorios,
+                repuestos, insumos y una selección de ropa tanto para hombres como para mujeres. En Chimpas Bikers, tu
+                satisfacción y la seguridad de tu moto son nuestras prioridades. ¡Déjanos ser tu socio de confianza en
+                cada kilómetro del camino!
+            </p>
+
+            <h3 class="display-7 text-center fw-bold">
+                <a class="enlaces" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Inicia sesión</a>
+                o <a class="enlaces" href="registro.html">regístrate</a> para disfrutar de una experiencia exclusiva y
+                personalizada o, si prefieres un
+                servicio ocasional, simplemente <a class="enlaces"
+                    href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20reservar%20un%20servicio"
+                    target="_blank">has tu reserva</a>.
+            </h3>
+
+        </div>
+
+    </div>
+
+
+    <!--TARGETA DE PRESENTACION----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- MODAL PARA LOS BOTONES DE INICIO DE SESION----------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-sm">
+
+            <div class="modal-content">
+
+                <div class="text-center mt-3">
+
+                    <h1 class=" fs-4 fw-bolder text-danger" id="staticBackdropLabel">Iniciar Sesion</h1>
+
+                </div>
+
+                <div class="modal-body  text-danger fw-bolder fs-5">
+
+                    <form id="loginForm" class="needs-validation" novalidate>
+
+                        <div class="form-group my-3">
+                            <label for="logUser">Nombre de usuario:</label>
+                            <input type="text" placeholder="Nombre de usuario" id="logUser"
+                                class="form-control transparent-input" required>
+                        </div>
+
+                        <div class="form-group my-3">
+                            <label for="logPassword">Contraseña:</label>
+                            <input type="password" id="logPassword" class="form-control transparent-input"
+                                placeholder="Contraseña" required>
+                        </div>
+
+                        <div class="text-center mb-3">
+
+                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancelar</button>
+
+                            <button type="submit" class="btn btn-dark">Iniciar Sesion</button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MODAL PARA LOS BOTONES DE INICIO DE SESION----------------------------------------------------------------------------------------------------------------------------- -->
+
+    <hr id="servicios">
+
+
+    <!--SERVICIOS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <h1 class="display-5 fw-bold text-center my-5">SERVICIOS</h1>
+
+    <div class="container my-5">
+
+        <div class="col-md-12">
+
+            <p class="fs-4">
+                Mantener tu moto en óptimas condiciones no solo asegura una conducción segura y eficiente, sino que
+                también prolonga su vida útil y garantiza tu tranquilidad en cada viaje. En nuestro taller, entendemos
+                la importancia de una moto bien mantenida y nos enorgullece ofrecer servicios de mantenimiento de la más
+                alta calidad. Nuestro equipo de expertos está dedicado a proporcionar un diagnóstico preciso, reparación
+                experta y asesoramiento confiable. Utilizamos herramientas y piezas de primera clase para asegurar que
+                tu moto funcione al máximo rendimiento. Confía en nosotros para cuidar de tu moto como si fuera nuestra,
+                y experimenta la diferencia que puede hacer el mejor servicio técnico en la industria. Tu seguridad y
+                satisfacción son nuestra prioridad, y estamos aquí para darte la certeza de que tu moto está en las
+                mejores manos.
+            </p>
+
+            <h3 class="display-7 text-center fw-bold">
+                Te presentamos nuestro catalogo de servicios
+            </h3>
+
+        </div>
+
+    </div>
+
+    <!-- TARGETAS DE SERVICIOS----------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <!-- TARGETA1 -->
+
+            <div class="card cart" style="width: 18rem;">
+
+                <img src="image/serv1.jpg" class="card-img-top " alt="...">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">Reparaciones</h5>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20reservar%20un%20servicio"
+                        class="btn btn-info">
+                        Reservar
+                    </a>
+
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#targets1">
+                        Detalles
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- TARGETA2 -->
+
+            <div class="card cart" style="width: 18rem;">
+
+                <img src="image/serv1.jpg" class="card-img-top " alt="...">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">Diagnostico</h5>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20reservar%20un%20servicio"
+                        class="btn btn-info">
+                        Reservar
+                    </a>
+
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#targets2">
+                        Detalles
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- TARGETA3 -->
+
+            <div class="card cart" style="width: 18rem;">
+
+                <img src="image/serv1.jpg" class="card-img-top " alt="...">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">Mantenimiento</h5>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20reservar%20un%20servicio"
+                        class="btn btn-info">
+                        Reservar
+                    </a>
+
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#targets3">
+                        Detalles
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- TARGETA4 -->
+
+            <div class="card cart" style="width: 18rem;">
+
+                <img src="image/serv1.jpg" class="card-img-top " alt="...">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">Lavado</h5>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20reservar%20un%20servicio"
+                        class="btn btn-info">
+                        Reservar
+                    </a>
+
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#targets4">
+                        Detalles
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- TARGETA5 -->
+
+            <div class="card cart" style="width: 18rem;">
+
+                <img src="image/serv1.jpg" class="card-img-top " alt="...">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">Personalizacion</h5>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20reservar%20un%20servicio"
+                        class="btn btn-info">
+                        Reservar
+                    </a>
+
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#targets5">
+                        Detalles
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- TARGETA6 -->
+
+            <div class="card cart" style="width: 18rem;">
+
+                <img src="image/serv1.jpg" class="card-img-top " alt="...">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">Revision para el ITV</h5>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20reservar%20un%20servicio"
+                        class="btn btn-info">
+                        Reservar
+                    </a>
+
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#targets6">
+                        Detalles
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- TARGETA7 -->
+
+            <div class="card cart" style="width: 18rem;">
+
+                <img src="image/serv1.jpg" class="card-img-top " alt="...">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">Asesoramiento</h5>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20reservar%20un%20servicio"
+                        class="btn btn-info">
+                        Reservar
+                    </a>
+
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#targets7">
+                        Detalles
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- TARGETA8 -->
+
+            <div class="card cart" style="width: 18rem;">
+
+                <img src="image/serv1.jpg" class="card-img-top " alt="...">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">SOS</h5>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20reservar%20un%20servicio"
+                        class="btn btn-info">
+                        AYUDA!
+                    </a>
+
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#targets8">
+                        Detalles
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- TARGETAS DE SERVICIOS----------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- MODALES DE SERVICIOS--------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- MODAL1 -->
+
+    <div class="modal fade" id="targets1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Reparaciones</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <p class="fs-4">
+                        Ofrecemos un soporte integral para cualquier tipo de reparación que tu moto pueda necesitar. Ya
+                        sea que enfrentes problemas visuales, mecánicos, eléctricos u otros, nuestro equipo está
+                        preparado para ofrecer soluciones efectivas y rápidas. Realiza tu reserva con nosotros y
+                        experimenta de primera mano por qué somos líderes en el sector.
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Atras</button>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20reservar%20un%20servicio"
+                        class="btn btn-info">
+                        Reservar
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MODAL2 -->
+
+    <div class="modal fade" id="targets2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Diagnostico</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+
+                <div class="modal-body">
+                    <img class="w-100 h-50" src="image/construccion.jpg" alt="">
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Atras</button>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20reservar%20un%20servicio"
+                        class="btn btn-info">
+                        Reservar
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MODAL3 -->
+
+    <div class="modal fade" id="targets3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Mantenimiento</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+
+                <div class="modal-body">
+                    <img class="w-100 h-50" src="image/construccion.jpg" alt="">
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Atras</button>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20reservar%20un%20servicio"
+                        class="btn btn-info">
+                        Reservar
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MODAL4 -->
+
+    <div class="modal fade" id="targets4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Lavado</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+
+                <div class="modal-body">
+                    <img class="w-100 h-50" src="image/construccion.jpg" alt="">
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Atras</button>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20reservar%20un%20servicio"
+                        class="btn btn-info">
+                        Reservar
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MODAL5 -->
+
+    <div class="modal fade" id="targets5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Personalizacion</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+
+                <div class="modal-body">
+
+
+                    <img class="w-100 h-50" src="image/construccion.jpg" alt="">
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Atras</button>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20reservar%20un%20servicio"
+                        class="btn btn-info">
+                        Reservar
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MODAL6 -->
+
+    <div class="modal fade" id="targets6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Revision para el ITV</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+
+                <div class="modal-body">
+                    <img class="w-100 h-50" src="image/construccion.jpg" alt="">
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Atras</button>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20reservar%20un%20servicio"
+                        class="btn btn-info">
+                        Reservar
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MODAL7 -->
+
+    <div class="modal fade" id="targets7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Asesoramiento</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+
+                <div class="modal-body">
+                    <img class="w-100 h-50" src="image/construccion.jpg" alt="">
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Atras</button>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20reservar%20un%20servicio"
+                        class="btn btn-info">
+                        Reservar
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MODAL8 -->
+
+    <div class="modal fade" id="targets8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">SOS</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+
+                <div class="modal-body">
+                    <img class="w-100 h-50" src="image/construccion.jpg" alt="">
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Atras</button>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20reservar%20un%20servicio"
+                        class="btn btn-info">
+                        AYUDA!
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MODALES--------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+    <!--SERVICIOS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <hr id="piezas">
+
+    <!--PIEZAS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <h1 class="display-5 fw-bold text-center my-5">PIEZAS</h1>
+
+    <div class="container my-5">
+
+        <div class="col-md-12">
+
+            <p class="fs-4">
+                En nuestra tienda podras encontrar una amplia variedad de accesorios, repuestos e
+                insumos diseñados para mantener tu motocicleta en óptimas condiciones. Además, ofrecemos una selección
+                de ropa de alta calidad para mujer y hombre, ideal para cada tipo de viaje. Ya sea que busques piezas
+                para mejorar el rendimiento de tu moto o equiparte con el mejor estilo y protección en la carretera,
+                aquí encontrarás todo lo que necesitas. Explora nuestras opciones y equipa tanto tu motocicleta como a
+                ti mismo para tu próxima aventura.
+            </p>
+
+            <h3 class="display-7 text-center fw-bold">
+                ¡Te presentamos el catalogo de lo que puedes encontrar en la <a class="enlaces" href="registro.html">tienda</a>!
+            </h3>
+
+        </div>
+
+    </div>
+
+
+    <!-- TARGETAS DE PIEZAS----------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <!-- TARGETA1 -->
+
+            <div class="card cart" style="width: 18rem;">
+
+                <img src="image/repuestos.jpg" class="card-img-top " alt="...">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">REPUESTOS</h5>
+
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ducimus vero
+                        voluptatum ut dolore facilis explicabo dicta exercitationem sit. Nisi?
+                    </p>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20hacer%20un%20pedido"
+                        class="btn btn-info">
+                        Pedir
+                    </a>
+
+                    <a href="tienda.html" class="btn btn-dark btn-md">
+                        Ver más
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- TARGETA2 -->
+
+            <div class="card cart" style="width: 18rem;">
+
+                <img src="image/accesorios.jpg" class="card-img-top " alt="...">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">ACCESORIOS</h5>
+
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ducimus vero
+                        voluptatum ut dolore facilis explicabo dicta exercitationem sit. Nisi?
+
+                    </p>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20hacer%20un%20pedido"
+                        class="btn btn-info">
+                        Pedir
+                    </a>
+
+                    <a href="tienda.html" class="btn btn-dark btn-md">
+                        Ver más
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- TARGETA3 -->
+
+            <div class="card cart" style="width: 18rem;">
+
+                <img src="image/insumos.jpg" class="card-img-top " alt="...">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">INSUMOS</h5>
+
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ducimus vero
+                        voluptatum ut dolore facilis explicabo dicta exercitationem sit. Nisi?
+                    </p>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20hacer%20un%20pedido"
+                        class="btn btn-info">
+                        Pedir
+                    </a>
+
+                    <a href="tienda.html" class="btn btn-dark btn-md">
+                        Ver más
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- TARGETA4 -->
+
+            <div class="card cart" style="width: 18rem;">
+
+                <img src="image/ropa.jpg" class="card-img-top " alt="...">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">ROPA</h5>
+
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ducimus vero
+                        voluptatum ut dolore facilis explicabo dicta exercitationem sit. Nisi?
+                    </p>
+
+                    <a href="https://wa.me/+59177563943?text=Hola,%20quisiera%20quisiera%20hacer%20un%20pedido"
+                        class="btn btn-info">
+                        Pedir
+                    </a>
+
+                    <a href="tienda.html" class="btn btn-dark btn-md">
+                        Ver más
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- TARGETAS DE PIEZAS----------------------------------------------------------------------------------------------------------------- -->
+
+    <!--PIEZAS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <hr id="rse">
+
+    <!-- APORTE SOCIAL--------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <h1 class="display-5 fw-bold text-center my-5">RESPONSABILIDAD SOCIAL EMPRESARIAL</h1>
+
+    <div class="container my-5">
+
+        <div class="col-md-12">
+
+            <p class="fs-4">
+                En nuestro taller, entendemos que el éxito empresarial va más allá de la excelencia en el servicio. Nos
+                comprometemos profundamente con la responsabilidad social y trabajamos para hacer una diferencia
+                positiva en nuestra comunidad. Implementamos prácticas sostenibles en nuestras operaciones diarias,
+                apoyamos iniciativas locales y fomentamos un ambiente de trabajo inclusivo y respetuoso. Creemos en la
+                importancia de devolver a la sociedad y de contribuir al bienestar general, mientras mantenemos nuestros
+                estándares de calidad y compromiso con el cliente. En cada aspecto de nuestro negocio, buscamos generar
+                un impacto positivo que refleje nuestros valores y nuestra responsabilidad hacia un futuro mejor.
+            </p>
+
+            <h3 class="display-7 text-center fw-bold">
+                "Trabajamos con pasión para ofrecer excelencia, mientras construimos un futuro más sostenible y justo
+                para nuestra comunidad."
+            </h3>
+
+        </div>
+
+    </div>
+
+
+    <!-- TARGETA APORTE SOCIAL----------------------- -->
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="card cart" style="width: 18rem;">
+
+                <img src="image/imga2.jpg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">Evento de Apoyo Social</h5>
+
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ducimus vero
+                        voluptatum ut dolore facilis explicabo dicta exercitationem sit. Nisi?
+                    </p>
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#targetap1">
+                        Más
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- TARGETA APORTE SOCIAL----------------------- -->
+
+    <!-- MODALES DE APORTE SOCIAL--------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="modal fade" id="targetap1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        alert-danger="staticBackdropLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Evento de Apoyo Social</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <!-- CARRUSEL DENTRO DEL MODAL -->
+
+                    <div id="carouselExampleIndicators1" class="carousel slide">
+
+                        <div class="carousel-indicators">
+
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+
+                        </div>
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="image/imga2.jpg" class="d-block w-100 h-50" alt="...">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="image/imga3.jpg" class="d-block w-100 h-50" alt="...">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="image/imga4.jpg" class="d-block w-100 h-50" alt="...">
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+                            data-bs-slide="prev">
+
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+                            data-bs-slide="next">
+
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+
+                        </button>
+
+                    </div>
+
+                    <div>
+
+                        <p class="fs-4">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias blanditiis dolores
+                            impedit expedita explicabo ut facilis debitis ratione inventore reiciendis, obcaecati illum
+                            ad incidunt minus omnis dicta rerum accusamus voluptate animi? At officia magni, a eligendi
+                            officiis saepe, nostrum reprehenderit non, alias repellat excepturi sunt? Possimus error
+                            earum mollitia atque!
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MODALES DE APORTE SOCIAL--------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- APORTE SOCIAL--------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- PIE DE PAGINA---------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <footer>
+
+        <h5>Síguenos</h5>
+
+        <div class="social-links">
+            <a href="#"><i class="bi bi-whatsapp"> WhatsApp</i></a>
+            <a href="#"><i class="bi bi-facebook"> Facebook</i></a>
+            <a href="#"><i class="bi bi-instagram"> Instagram</i></a>
+            <a href="#"><i class="bi bi-youtube"> YouTube</i></a>
+            <a href="#"><i class="bi bi-geo-alt"> Sucursales</i></a>
+        </div>
+
+        <div class="footer-content">
+
+            <p>&copy; Chimpas Bikers. Todos los derechos reservados.</p>
+
+        </div>
+
+    </footer>
+
+    <!-- PIE DE PAGINA---------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
